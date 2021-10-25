@@ -7,10 +7,10 @@ let score = 0; //user score
 //2 - yellow
 //3 - blue
 
-const blue = document.querySelector('.blue');
-const red = document.querySelector('.red');
 const green = document.querySelector('.green');
+const red = document.querySelector('.red');
 const yellow = document.querySelector('.yellow');
+const blue = document.querySelector('.blue');
 
 //function to shuffle colors
 let shuffleOrder = () => {
@@ -27,7 +27,7 @@ let shuffleOrder = () => {
 
 //Show the next color
 let lightColor = (element, number) => {
-    number = number * 500;
+    number = number * 400;
     setTimeout(() => {
         element.classList.add('selected');
     }, number - 250);
@@ -58,20 +58,15 @@ let userClick = (color) => {
     setTimeout(() => {
        createColorElement(color).classList.remove('selected');
        checkOrder();
-    },250);
+    }, 250);
 }
 
 //function that return the color
 let createColorElement = (color) => {
-    if(color == 0) {
-        return green;
-    } else if(color == 1) {
-        return red;
-        } else if(color == 2) {
-            return yellow;
-            } else if(color == 3) {
-                return blue;
-                }
+    if(color == 0) return green;
+     else if(color == 1) return red;
+        else if(color == 2) return yellow;
+            else if(color == 3) return blue;
 }
 
 //function to define the next level
