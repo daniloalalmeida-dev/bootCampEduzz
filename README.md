@@ -19,3 +19,9 @@ Através da aplicação você consegue pesquisar um perfil de usuário do GitHub
 ### url-shortener
 Encurtador de url, ao qual recebe uma url longa e gera uma url curta, salva e segura em banco de dados, neste caso, o MongoDB.
 API com NodeJS, Typescript e MongoDB para a base de dados.
+
+***
+
+###Docker Guide
+https://github.com/daniloalalmeida-dev/DockerGuide
+Repositório criado para auxiliar no aprendizado de Docker, disponível na plataforma Digital Innovation One.
